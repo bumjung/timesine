@@ -23,9 +23,7 @@ return( queue );
  
 }
  
- 
-// I trim the queue down to the appropriate size, removing
-// items from the beginning of the internal array.
+// When the array is full, trim the head to maintain fixed length
 FixedQueue.trimHead = function(){
  
 // Check to see if any trimming needs to be performed.
@@ -44,7 +42,6 @@ this,
 );
  
 };
- 
  
 // I synthesize wrapper methods that call the native Array
 // methods followed by a trimming method.
@@ -94,7 +91,7 @@ app.get('/', function(req, res) {
 });
 
 io.sockets.on('connection', function (socket) {
-	var data = FixedQueue(300);
+	var data = FixedQueue(200);
 	var cnt = 0;
 	var off=false;
 	var d = new Date();
