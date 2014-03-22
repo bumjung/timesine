@@ -1,0 +1,87 @@
+/* Sticky Footer */
+html,
+body {
+  height: 100%;
+  background-color:#fff; 
+}
+#chart{
+  background-color: #fff;
+  border: 2px solid #25313E;
+}
+.time{
+  color:#333;
+}
+.title{
+  color:#333;
+  text-align:center;
+  font-size:55px;
+  font-weight:300;
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+.time p{
+  font-weight:300;
+  font-size:20px;
+}
+#footer {
+  height: 60px;
+}
+#footer .container {
+    background-color: #25313E;
+    padding-left: 15px;
+    padding-right: 15px;
+    width:100%;
+  }
+.container .text-muted {
+    margin: 20px 0;
+    color: #fff;
+}
+#node{
+  display:inline-block;
+  padding:3px;
+  color:#fff;
+  background-color:#80BD00;
+}
+
+#socket{
+  display:inline-block;
+  padding:3px;
+  color:#fff;
+  background-color:#1F6F90;
+}
+
+#express{
+  display:inline-block;
+  padding:3px;
+  color:#fff;
+  background-color:#ce616e;
+}
+
+#nvd3{
+  display:inline-block;
+  padding:3px;
+  color:#fff;
+  background-color:#9b59b6;
+}
+#release{
+  font-size:15px;
+  position:absolute;
+  right:15px;
+}
+
+#desc{
+  padding-top:40px;
+  text-align:center;
+  font-style:italic;
+  margin:0 auto;
+  width:700px;
+}
+#secret{
+  padding-top: 10px;
+  font-size:12px;
+}

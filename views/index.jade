@@ -1,0 +1,23 @@
+extends layout
+	
+block content
+	.container
+		.row
+			.col-md-12
+				.title
+					h1
+					| TIME AND SINE
+	.container
+		.row
+			.col-md-12
+				p(style="margin-top:35px; margin-bottom:20px;") <span style="background-color:#2ca02c; padding:7px; font-size:25px; text-transform:uppercase; color:#fff;">Graph of sin( time )</span>
+				.time
+					p Loading...
+				#chart
+					svg(height='300px', width='1500px')
+				#desc
+					p This project is an attempt to show viewers (and myself) the beauty of Socket.IO and the magic in it's ability to display data in realtime alongside NVD3.js.
+					p#secret also sine graphs are <span style="color:#2ca02c; font-weight:500;">awesome<span>.
+		.row
+			.col-md-12
+				.p
